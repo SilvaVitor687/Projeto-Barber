@@ -2,8 +2,10 @@
 
 require __DIR__.'/vendor/autoload.php';
 
-include __DIR__.'/views/header.php';
-include __DIR__.'/views/footer.php';
+use \App\Controller\Pages\Home;
 
+$obRequest = new  \App\Http\Request;
+
+echo Home::getHome();
 
 ?>
