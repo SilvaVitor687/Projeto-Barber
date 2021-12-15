@@ -1,11 +1,12 @@
 <?php
 
 namespace App\Controller\Pages;
+
 use \App\Utils\View;
 use \App\Model\Entity\Organization;
 
 
-class Home extends Page {
+class About extends Page {
 
     /**
      * Método Responsável por retornar o conteudo (view) da nossa HOME.
@@ -16,7 +17,7 @@ class Home extends Page {
 
         $obOrganization = new Organization;
 
-       $content = View::getRender('pages/home',[
+       $content = View::getRender('pages/about',[
            'name'  => 'Victor Silva'
        ]);
 

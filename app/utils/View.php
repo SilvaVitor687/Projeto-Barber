@@ -4,6 +4,16 @@ namespace App\Utils;
 
 class View {
 
+    private static $vars = [];
+
+    /**
+     * Método responsável por definir os dados  iniciais da classe.
+     * @param array $vars
+     */
+    public static function init($vars = []){
+        self::$vars = $vars;
+    }
+
     /**
      * Método que retorna o conteúdo de uma view
      * @param string $view
